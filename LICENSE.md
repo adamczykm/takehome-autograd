@@ -1,5 +1,6 @@
 License (MIT)
 
+Copyright (c) 2019 Michał Adamczyk <michal.anks@gmail.com>
 Copyright (c) 2017 Philippe Desjardins-Proulx <philippe.d.proulx@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
