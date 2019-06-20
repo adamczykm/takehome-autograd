@@ -17,8 +17,8 @@ On Linux/Unix, to build and make the test:
 
 By default, the makefiles will build the library, executable, tests, and benchmarks. The commands
 
-    $ ./test/test_nemo
-    $ ./bench/bench_nemo
+    $ ./test/test_autograd
+    $ ./bench/bench_autograd
 
 will run the tests and benchmarks. And
 

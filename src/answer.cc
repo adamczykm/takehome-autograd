@@ -1,9 +1,9 @@
-#include "nemo/foo.hh"
+#include "autograd/foo.hh"
 
-namespace nemo {
+namespace autograd {
 
 auto answer(int n) -> bool {
   return n == 42;
 }
 
-} /* end namespace nemo */
+} /* end namespace autograd */

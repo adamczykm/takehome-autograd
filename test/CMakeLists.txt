@@ -10,16 +10,16 @@ set(test_src
   primes_test.cc
 )
 
-add_executable(test_nemo ${test_src})
+add_executable(test_autograd ${test_src})
 
-target_link_libraries(test_nemo
+target_link_libraries(test_autograd
   gtest
-  ${NEMO_LIB_NAME}
+  ${AUTOGRAD_LIB_NAME}
   ${CMAKE_THREAD_LIBS_INIT}
   ${MATH_LIBS}
 )
 
 add_test(
   NAME tests
-  COMMAND test_nemo
+  COMMAND test_autograd
 )

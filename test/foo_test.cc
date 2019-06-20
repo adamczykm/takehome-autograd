@@ -1,15 +1,15 @@
 #include <iostream>
 #include "gtest/gtest.h"
 
-#include "nemo/foo.hh"
+#include "autograd/foo.hh"
 
-TEST(NemoFoo, Positives) {
-  EXPECT_EQ(38, nemo::foo(-4));
-  EXPECT_EQ(42, nemo::foo(0));
+TEST(AutogradFoo, Positives) {
+  EXPECT_EQ(38, autograd::foo(-4));
+  EXPECT_EQ(42, autograd::foo(0));
 }
 
-TEST(NemoFoo, Negatives) {
-  EXPECT_NE(-1, nemo::foo(99));
-  EXPECT_NE(0, nemo::foo(-41));
-  EXPECT_NE(42, nemo::foo(42));
+TEST(AutogradFoo, Negatives) {
+  EXPECT_NE(-1, autograd::foo(99));
+  EXPECT_NE(0, autograd::foo(-41));
+  EXPECT_NE(42, autograd::foo(42));
 }

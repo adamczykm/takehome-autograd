@@ -7,11 +7,11 @@ set(bench_cc
   primes_bench.cc
 )
 
-add_executable(bench_nemo ${bench_cc})
+add_executable(bench_autograd ${bench_cc})
 
-target_link_libraries(bench_nemo
+target_link_libraries(bench_autograd
   benchmark
-  ${NEMO_LIB_NAME}
+  ${AUTOGRAD_LIB_NAME}
   ${CMAKE_THREAD_LIBS_INIT}
   ${MATH_LIBS}
 )

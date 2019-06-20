@@ -1,5 +1,5 @@
 # Source files (except the main for the executable):
-set(nemo_src
+set(autograd_src
   foo.cc
   bar.cc
   answer.cc
@@ -7,15 +7,15 @@ set(nemo_src
 )
 
 # Compile the library
-add_library(${NEMO_LIB_NAME} ${NEMO_LIB_TYPE} ${nemo_src})
+add_library(${AUTOGRAD_LIB_NAME} ${AUTOGRAD_LIB_TYPE} ${autograd_src})
 
 # Compile the executable
-add_executable(nemo_exe main.cc)
+add_executable(autograd_exe main.cc)
 
-# Link the executable to the nemo library (and thread/math libs).
-target_link_libraries(nemo_exe ${NEMO_LIB_NAME} ${CMAKE_THREAD_LIBS_INIT} ${MATH_LIBS})
+# Link the executable to the autograd library (and thread/math libs).
+target_link_libraries(autograd_exe ${AUTOGRAD_LIB_NAME} ${CMAKE_THREAD_LIBS_INIT} ${MATH_LIBS})
 
 # How and what to install
-install(TARGETS ${NEMO_LIB_NAME} LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
-install(TARGETS nemo_exe RUNTIME DESTINATION bin)
-install(DIRECTORY ../include/nemo DESTINATION include)
+install(TARGETS ${AUTOGRAD_LIB_NAME} LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+install(TARGETS autograd_exe RUNTIME DESTINATION bin)
+install(DIRECTORY ../include/autograd DESTINATION include)

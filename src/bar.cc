@@ -1,9 +1,9 @@
-#include "nemo/foo.hh"
+#include "autograd/foo.hh"
 
-namespace nemo {
+namespace autograd {
 
 auto bar(std::string const& x) -> size_t {
   return x.size();
 }
 
-} /* end namespace nemo */
+} /* end namespace autograd */

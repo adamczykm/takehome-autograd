@@ -1,9 +1,9 @@
-#include "nemo/count_primes.hh"
+#include "autograd/count_primes.hh"
 #include <vector>
 #include <cmath>
 #include <algorithm>
 
-namespace nemo {
+namespace autograd {
 
 auto est_n_primes(size_t n) -> double {
   const double n_d = (double)n;
@@ -57,4 +57,4 @@ auto count_primes_no_goto(size_t n) -> size_t {
   return primes.size();
 }
 
-} /* end namespace nemo */
+} /* end namespace autograd */

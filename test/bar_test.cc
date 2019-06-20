@@ -1,15 +1,15 @@
 #include <iostream>
 #include "gtest/gtest.h"
 
-#include "nemo/foo.hh"
+#include "autograd/foo.hh"
 
-TEST(NemoBar, GetStringSize) {
-  EXPECT_EQ(size_t{5}, nemo::bar(std::string{"Kyoto"}));
-  EXPECT_EQ(size_t{9}, nemo::bar(std::string{"Stockholm"}));
-  EXPECT_EQ(size_t{10}, nemo::bar(std::string{"Montreal  "}));
-  EXPECT_EQ(size_t{3}, nemo::bar(std::string{"   "}));
+TEST(AutogradBar, GetStringSize) {
+  EXPECT_EQ(size_t{5}, autograd::bar(std::string{"Kyoto"}));
+  EXPECT_EQ(size_t{9}, autograd::bar(std::string{"Stockholm"}));
+  EXPECT_EQ(size_t{10}, autograd::bar(std::string{"Montreal  "}));
+  EXPECT_EQ(size_t{3}, autograd::bar(std::string{"   "}));
 }
 
-TEST(NemoBar, EmptyStringHaveZeroSize) {
-  EXPECT_EQ(size_t{0}, nemo::bar(std::string{""}));
+TEST(AutogradBar, EmptyStringHaveZeroSize) {
+  EXPECT_EQ(size_t{0}, autograd::bar(std::string{""}));
 }
